@@ -22,12 +22,15 @@ public class AppUtils {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(url);
-		log.debug("launch App method end...");
+		System.out.println("launch App method end...");
 	}
 	
 	public static void closeApp() {
-		log.debug("closeApp method start...");
+		System.out.println("closeApp method start...");
 		driver.close();
-		log.debug("closeApp method end...");	
+		System.out.println("closeApp method end...");
+		
 	}
+	
+	
 }
