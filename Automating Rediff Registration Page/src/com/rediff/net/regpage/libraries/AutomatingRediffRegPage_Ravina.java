@@ -1,7 +1,6 @@
 package com.rediff.net.regpage.libraries;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 import com.rediff.net.regpage.utils.AppUtils;
 
@@ -15,5 +14,5 @@ public class AutomatingRediffRegPage_Ravina extends AppUtils {
 	 * 
 	 * */
 	
-	private static final Logger log=LoggerFactory.getLogger(AutomatingRediffRegPage_Ravina.class);
+	private static final Logger log=Logger.getLogger(AutomatingRediffRegPage_Ravina.class.getName());
 }

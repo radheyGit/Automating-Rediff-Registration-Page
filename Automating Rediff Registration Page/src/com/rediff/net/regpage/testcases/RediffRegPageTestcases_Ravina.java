@@ -1,13 +1,12 @@
 package com.rediff.net.regpage.testcases;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 import com.rediff.net.regpage.utils.AppUtils;
 
 public class RediffRegPageTestcases_Ravina {
 
-	private static final Logger log = LoggerFactory.getLogger(RediffRegPageTestcases_Ravina.class.getName());
+	private static final Logger log = Logger.getLogger(RediffRegPageTestcases_Ravina.class.getName());
 	
 	public static void main(String[] args) throws InterruptedException {
 
@@ -23,15 +22,15 @@ public class RediffRegPageTestcases_Ravina {
 		 * Step 03 : close App using AppUtils.closeApp(); method
 		 * */
 		
-		log.debug("Application launched start...");
+		log.info("Application launched start...");
 		AppUtils.launchApp();
-		log.debug("Application launched end...");
+		log.info("Application launched end...");
 		
 		Thread.sleep(2000);
 		
-		log.debug("App closing start...");
+		log.info("App closing start...");
 		AppUtils.closeApp();
-		log.debug("App closing end...");
+		log.info("App closing end...");
 	}
 
 }

@@ -1,11 +1,10 @@
 package com.rediff.net.regpage.testcases;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 public class RediffRegPageTestcases_Rajat {
 
-	private static final Logger log = LoggerFactory.getLogger(RediffRegPageTestcases_Rajat.class);
+	private static final Logger log = Logger.getLogger(RediffRegPageTestcases_Rajat.class.getName());
 	
 	public static void main(String[] args) {
 

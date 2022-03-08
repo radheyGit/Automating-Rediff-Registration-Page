@@ -1,9 +1,9 @@
 package com.rediff.net.regpage.libraries;
 
+import java.util.logging.Logger;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.rediff.net.regpage.utils.AppUtils;
 
@@ -17,16 +17,16 @@ public class AutomatingRediffRegPage_Ruhi extends AppUtils {
 	 * 
 	 * */
 	
-	private static final Logger log=LoggerFactory.getLogger(AutomatingRediffRegPage_Ruhi.class);
+	private static final Logger log=Logger.getLogger(AutomatingRediffRegPage_Ruhi.class.getName());
 	
 	public boolean isFullNameDisplayed(){
 		boolean isTrue=false;
-		log.debug("isFullNameDisplayed started.");
+		log.info("isFullNameDisplayed started.");
 		WebElement fullName = driver.findElement(By.id("fullname"));
 		if(fullName.isDisplayed()){
 			isTrue=true;
 		}
-		log.debug("isFullNameDisplayed end.");
+		log.info("isFullNameDisplayed end.");
 		return isTrue;
 	}
 }
